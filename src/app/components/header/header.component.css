@@ -37,7 +37,11 @@
     padding-left: 15px;
 }
 
-.nav li a{
+.nav-menu{
     text-decoration: none;
     color: black;
+}
+
+.active{
+    color: cadetblue;
 }

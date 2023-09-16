@@ -1,0 +1,31 @@
+.seller-auth{
+    text-align: center;
+}
+
+.seller-auth h1 {
+    color: cadetblue;
+}
+
+.seller-signup-form{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+
+.seller-form-input{
+    margin-bottom: 20px;
+    height: 35px;
+    padding-left: 5px;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+}
+
+.seller-signup-form button{
+    height: 35px;
+    border: 1px solid cadetblue;
+    border-radius: 10px;
+    color: white;
+    background-color: cadetblue;
+    cursor: pointer;
+}
