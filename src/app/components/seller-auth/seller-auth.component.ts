@@ -12,10 +12,6 @@ export class SellerAuthComponent {
 
   constructor(private seller:SellerService, private router:Router){}
   signUp(data:SignUp):void{
-    this.seller.sellerSignUp(data).subscribe((result)=>{
-      if(result){
-        this.router.navigate(['seller-home']);
-      }
-    })
+    this.seller.sellerSignUp(data);
   }
 }
