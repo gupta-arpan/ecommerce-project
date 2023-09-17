@@ -1,0 +1,25 @@
+{
+  "seller": [
+    {
+      "id": 1
+    },
+    {
+      "name": "Arpan Gupta",
+      "email": "arpan6095@gmail.com",
+      "password": "abcd",
+      "id": 2
+    },
+    {
+      "name": "Aviraj Gour",
+      "email": "aviraj@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "Adarsh",
+      "email": "adarsh@gmail.com",
+      "password": "abcd",
+      "id": 4
+    }
+  ]
+}

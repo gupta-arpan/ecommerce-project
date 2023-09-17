@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { SellerAuthComponent } from './components/seller-auth/seller-auth.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SellerHomeComponent } from './components/seller-home/seller-home.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +17,14 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HeaderComponent,
     HomeComponent,
     SellerAuthComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    SellerHomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
