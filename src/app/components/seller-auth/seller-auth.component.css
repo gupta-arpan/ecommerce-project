@@ -6,11 +6,12 @@
     color: cadetblue;
 }
 
-.seller-signup-form{
+.seller-signup-form, .seller-signIn-form{
     display: flex;
     flex-direction: column;
     width: 35%;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 .seller-form-input{
@@ -21,7 +22,7 @@
     border-radius: 10px;
 }
 
-.seller-signup-form button{
+.seller-signup-form button, .seller-signIn-form button{
     height: 35px;
     border: 1px solid cadetblue;
     border-radius: 10px;

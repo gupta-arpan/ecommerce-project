@@ -1,6 +1,6 @@
-<div class="seller-auth">
+<div *ngIf="!isLoggedIn" class="seller-auth">
     <h1>
-        Seller Sign-Up
+        SignUp
     </h1>
     <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="seller-signup-form">
         <input class="seller-form-input" ngModel type="text" name="name" placeholder="Enter name">
@@ -8,4 +8,18 @@
         <input class="seller-form-input" ngModel type="password" name="password" placeholder="Enter password">
         <button>Sign up</button>
     </form>
+    <a (click)="openSignIn()">Already have an account? Sign-In</a>
+</div>
+
+<div *ngIf="isLoggedIn" class="seller-auth">
+    <h1>
+        Login
+    </h1>
+    <form #sellerSignIn="ngForm" (ngSubmit)="signIn(sellerSignIn.value)" class="seller-signIn-form">
+        <input class="seller-form-input" ngModel type="text" name="name" placeholder="Enter name">
+        <input class="seller-form-input" ngModel type="email" name="email" placeholder="Enter email">
+        <input class="seller-form-input" ngModel type="password" name="password" placeholder="Enter password">
+        <button>Login</button>
+    </form>
+    <a (click)="openSignUp()">Don't have an account? Sign-Up</a>
 </div>

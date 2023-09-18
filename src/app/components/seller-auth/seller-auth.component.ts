@@ -9,9 +9,20 @@ import { SignUp } from 'src/app/dataType';
   styleUrls: ['./seller-auth.component.css']
 })
 export class SellerAuthComponent {
-
+  isLoggedIn = false;
   constructor(private seller:SellerService, private router:Router){}
   signUp(data:SignUp):void{
     this.seller.sellerSignUp(data);
+  }
+
+  signIn(data:SignUp):void{
+    console.log(data);
+  }
+
+  openSignUp(){
+    this.isLoggedIn = false;
+  }
+  openSignIn(){
+    this.isLoggedIn = true;
   }
 }
