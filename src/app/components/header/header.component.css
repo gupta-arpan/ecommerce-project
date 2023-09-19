@@ -38,6 +38,12 @@
 }
 
 .nav-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-menu-item{
     text-decoration: none;
     color: black;
 }
