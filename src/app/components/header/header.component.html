@@ -12,10 +12,10 @@
             <li><a class="nav-menu-item" href="#">Cart(0)</a></li>
         </ul>
         <ul *ngSwitchCase="'seller'">
-            <li><a class="nav-menu-item" routerLink="" routerLinkActive="active">Product List</a></li>
             <li><a class="nav-menu-item" routerLink="" routerLinkActive="active">Add Product</a></li>
+            <li><a class="nav-menu-item" routerLink="" routerLinkActive="active">List</a></li>
             <li><a class="nav-menu-item" (click)="logout()">Logout</a></li>
-            <li><a class="nav-menu-item" href="#">Seller Name</a></li>
+            <li><a class="nav-menu-item" href="#">{{sellerName | titlecase}}</a></li>
         </ul>
     </div>
 </nav> 
