@@ -15,8 +15,8 @@
     <h1>
         Login
     </h1>
+    <p>{{authError}}</p>
     <form #sellerSignIn="ngForm" (ngSubmit)="signIn(sellerSignIn.value)" class="seller-signIn-form">
-        <input class="seller-form-input" ngModel type="text" name="name" placeholder="Enter name">
         <input class="seller-form-input" ngModel type="email" name="email" placeholder="Enter email">
         <input class="seller-form-input" ngModel type="password" name="password" placeholder="Enter password">
         <button>Login</button>
