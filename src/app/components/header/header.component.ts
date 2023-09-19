@@ -32,6 +32,6 @@ export class HeaderComponent {
 
   logout():void{
     localStorage.removeItem('seller');
-    this.route.navigate(['seller-home']);
+    this.route.navigate(['seller-auth']);
   }
 }

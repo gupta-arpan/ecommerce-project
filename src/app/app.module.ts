@@ -10,6 +10,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SellerHomeComponent } from './components/seller-home/seller-home.component';
+import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
+import { SellerProductListComponent } from './components/seller-product-list/seller-product-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SellerHomeComponent } from './components/seller-home/seller-home.compon
     HomeComponent,
     SellerAuthComponent,
     PageNotFoundComponent,
-    SellerHomeComponent
+    SellerHomeComponent,
+    SellerAddProductComponent,
+    SellerProductListComponent
   ],
   imports: [
     BrowserModule,
