@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { SignUp, login } from '../dataType';
+import { Product, SignUp, login } from '../dataType';
 import { BehaviorSubject } from 'rxjs';
 import { Router } from '@angular/router';
 
@@ -37,5 +37,12 @@ export class SellerService {
     if(localStorage.getItem('seller')){
       this.router.navigate(['seller-home']);
     }
+  }
+
+  addProduct(productData: Product){
+    this.http.post('http://localhost:3000/products', productData, {observe: 'response'})
+    .subscribe((result)=>{
+        console.log(result);
+      })
   }
 }
