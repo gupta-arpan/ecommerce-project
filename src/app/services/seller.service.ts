@@ -38,11 +38,4 @@ export class SellerService {
       this.router.navigate(['seller-home']);
     }
   }
-
-  addProduct(productData: Product){
-    this.http.post('http://localhost:3000/products', productData, {observe: 'response'})
-    .subscribe((result)=>{
-        console.log(result);
-      })
-  }
 }
