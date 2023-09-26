@@ -19,6 +19,7 @@
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
                 <td>{{item.image}}</td>
+                <button (click)="deleteProduct(item.id)">Delete</button>
             </tr>
         </tbody>
     </table>
