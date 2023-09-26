@@ -20,6 +20,7 @@
                 <td>{{item.description}}</td>
                 <td>{{item.image}}</td>
                 <fa-icon [icon]="deleteIcon"></fa-icon>
+                <a routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="editIcon"></fa-icon></a>
             </tr>
         </tbody>
     </table>

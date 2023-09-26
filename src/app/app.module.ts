@@ -13,6 +13,7 @@ import { SellerHomeComponent } from './components/seller-home/seller-home.compon
 import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
 import { SellerProductListComponent } from './components/seller-product-list/seller-product-list.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { UpdateProductComponent } from './components/update-product/update-product.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     PageNotFoundComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
-    SellerProductListComponent
+    SellerProductListComponent,
+    UpdateProductComponent
   ],
   imports: [
     BrowserModule,
