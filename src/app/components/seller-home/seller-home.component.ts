@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from 'src/app/dataType';
 import { ProductService } from 'src/app/services/product.service';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-seller-home',
@@ -10,6 +11,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class SellerHomeComponent {
   productList: undefined | Product[];
   deleteMessage: string | undefined;
+  deleteIcon = faTrash
   constructor(private productService: ProductService){}
   ngOnInit(){
     this.getList();
