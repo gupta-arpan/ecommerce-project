@@ -1,21 +1,39 @@
-<nav class="nav">
-    <h1><a routerLink="/">E-COMM</a></h1>
-    <div *ngIf="menuType === 'default'" class="nav-search">
-        <input type="text" placeholder="Search for products">
-        <button>Search</button>
+<nav class="navbar navbar-expand-lg bg-light d-flex justify-content-between">
+    <div>
+        <a class="navbar-brand" routerLink="/">E-COMM</a>
     </div>
-    <div class="nav-menu" [ngSwitch]="menuType">
-        <ul *ngSwitchCase="'default'">
-            <li><a class="nav-menu-item-" routerLink="/home" routerLinkActive="active">Home</a></li>
-            <li><a class="nav-menu-item" routerLink="/seller-auth" routerLinkActive="active">Seller</a></li>
-            <li><a class="nav-menu-item" href="#">Login</a></li>
-            <li><a class="nav-menu-item" href="#">Cart(0)</a></li>
+    <div *ngIf="menuType === 'default'" class="nav-search d-flex p-2 flex-grow-1" style="gap: 1rem;">
+        <input class="form-control form-control-lg" type="text" placeholder="Search for products">
+        <button class="btn btn-primary btn-lg">Search</button>
+    </div>
+    <div class="  d-inline" [ngSwitch]="menuType">
+        <ul *ngSwitchCase="'default'" class="navbar-nav m-auto">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/seller-auth" routerLinkActive="active">Seller</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cart(0)</a>
+            </li>
         </ul>
-        <ul *ngSwitchCase="'seller'">
-            <li><a class="nav-menu-item" routerLink="/seller-add-product" routerLinkActive="active">Add Product</a></li>
-            <li><a class="nav-menu-item" routerLink="/seller-home" routerLinkActive="active">List</a></li>
-            <li><a class="nav-menu-item" (click)="logout()">Logout</a></li>
-            <li><a class="nav-menu-item" href="#">{{sellerName | titlecase}}</a></li>
+        <ul *ngSwitchCase="'seller'" class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/seller-add-product" routerLinkActive="active">Add Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/seller-home" routerLinkActive="active">List</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" (click)="logout()">Logout</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">{{sellerName | titlecase}}</a>
+            </li>
         </ul>
     </div>
 </nav> 
