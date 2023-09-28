@@ -18,7 +18,7 @@
                 <td>{{item.price}}</td>
                 <td>{{item.category}}</td>
                 <td>{{item.description}}</td>
-                <td>{{item.image}}</td>
+                <td><img class="product-image" src="{{item.image}}" alt="product image"></td>
                 <fa-icon [icon]="deleteIcon"></fa-icon>
                 <a routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="editIcon"></fa-icon></a>
             </tr>
