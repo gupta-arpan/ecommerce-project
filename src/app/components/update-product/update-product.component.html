@@ -1,49 +1,65 @@
-<div class="update-product">
-    <h1>Update Product</h1>
+<div class="w-25 m-auto">
+    <div>
+        <h1 class="text-center">Update Product</h1>
+    </div>
     <p>{{updateProductMessage}}</p>
-    <form #updateProduct="ngForm" (ngSubmit)="updateProductData(updateProduct.value)" class="form">
-        <input
-         type="text"
-         placeholder="Enter product name"
-         name="name"
-         ngModel="{{productData?.name}}"
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter product price"
-         name="price"
-         ngModel="{{productData?.price}}"
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter product color"
-         name="color"
-         ngModel="{{productData?.color}}"
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter product category"
-         name="category"
-         ngModel="{{productData?.category}}"
-         class="form-input"
-        >
-        <textarea
-         type="text"
-         placeholder="Enter product description"
-         name="description"
-         ngModel="{{productData?.description}}"
-         class="form-input"
-        ></textarea>
-        <input
-         type="text"
-         placeholder="Enter product image url"
-         name="image"
-         class="form-input"
-         ngModel="{{productData?.image}}"
-        >
-        <button>Update Product</button>
+    <form #updateProduct="ngForm" (ngSubmit)="updateProductData(updateProduct.value)" class="form-group">
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Name"
+             name="name"
+             ngModel="{{productData?.name}}"
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Price"
+             name="price"
+             ngModel="{{productData?.price}}"
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Color"
+             name="color"
+             ngModel="{{productData?.color}}"
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Category"
+             name="category"
+             ngModel="{{productData?.category}}"
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <textarea
+             type="text"
+             placeholder="Enter Product Description"
+             name="description"
+             ngModel="{{productData?.description}}"
+             class="form-control"
+            ></textarea>
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Image Url"
+             name="image"
+             class="form-control"
+             ngModel="{{productData?.image}}"
+            >
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary" >Update Product</button>
+        </div>
     </form>
 </div>
