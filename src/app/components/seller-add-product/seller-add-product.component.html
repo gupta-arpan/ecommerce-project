@@ -1,49 +1,65 @@
-<div class="add-product">
-    <h1>Add Product</h1>
+<div class="w-25 m-auto">
+    <div>
+        <h1 class="text-center">Add Product</h1>
+    </div>
     <p>{{addProductMessage}}</p>
-    <form #addProduct="ngForm" (ngSubmit)="submitProductData(addProduct.value)" class="form">
-        <input
-         type="text"
-         placeholder="Enter Product Name"
-         name="name"
-         ngModel
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter Product Price"
-         name="price"
-         ngModel
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter Product Color"
-         name="color"
-         ngModel
-         class="form-input"
-        >
-        <input
-         type="text"
-         placeholder="Enter Product Category"
-         name="category"
-         ngModel
-         class="form-input"
-        >
-        <textarea
-         type="text"
-         placeholder="Enter Product Description"
-         name="description"
-         ngModel
-         class="form-input"
-        ></textarea>
-        <input
-         type="text"
-         placeholder="Enter Product Image Url"
-         name="image"
-         class="form-input"
-         ngModel
-        >
-        <button>Add Product</button>
+    <form #addProduct="ngForm" (ngSubmit)="submitProductData(addProduct.value)" class="form-group">
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Name"
+             name="name"
+             ngModel
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Price"
+             name="price"
+             ngModel
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Color"
+             name="color"
+             ngModel
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Category"
+             name="category"
+             ngModel
+             class="form-control"
+            >
+        </div>
+        <div class="mb-3">
+            <textarea
+             type="text"
+             placeholder="Enter Product Description"
+             name="description"
+             ngModel
+             class="form-control"
+            ></textarea>
+        </div>
+        <div class="mb-3">
+            <input
+             type="text"
+             placeholder="Enter Product Image Url"
+             name="image"
+             class="form-control"
+             ngModel
+            >
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary" >Add Product</button>
+        </div>
     </form>
 </div>
