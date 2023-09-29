@@ -3,8 +3,8 @@
         <a class="navbar-brand" routerLink="/">E-COMM</a>
     </div>
     <div *ngIf="menuType === 'default'" class="nav-search d-flex p-2 flex-grow-1" style="gap: 1rem;">
-        <input class="form-control form-control-lg" type="text" (keyup)="searchProducts($event)" (blur)="hideProducts()" placeholder="Search for products">
-        <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        <input #searchInput class="form-control form-control-lg" type="text" (keyup)="searchProducts($event)" (blur)="hideProducts()" placeholder="Search for products">
+        <button class="btn btn-primary btn-lg" type="submit" (click)="submitSearch(searchInput.value)">Search</button>
     </div>
     <div class="search-results-wrapper">
         <ul class="list-group">

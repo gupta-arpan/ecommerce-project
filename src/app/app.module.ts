@@ -15,6 +15,7 @@ import { SellerProductListComponent } from './components/seller-product-list/sel
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SearchResultComponent } from './components/search-result/search-result.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     SellerHomeComponent,
     SellerAddProductComponent,
     SellerProductListComponent,
-    UpdateProductComponent
+    UpdateProductComponent,
+    SearchResultComponent
   ],
   imports: [
     BrowserModule,

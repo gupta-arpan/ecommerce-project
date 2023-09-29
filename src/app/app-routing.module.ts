@@ -7,6 +7,7 @@ import { SellerHomeComponent } from './components/seller-home/seller-home.compon
 import { authGuard } from './auth.guard';
 import { SellerAddProductComponent } from './components/seller-add-product/seller-add-product.component';
 import { UpdateProductComponent } from './components/update-product/update-product.component';
+import { SearchResultComponent } from './components/search-result/search-result.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path:'seller-home', component: SellerHomeComponent, canActivate:[authGuard]},
   {path:'seller-add-product', component: SellerAddProductComponent, canActivate:[authGuard]},
   {path:'seller-update-product/:id', component: UpdateProductComponent, canActivate:[authGuard]},
+  {path:'search/:query', component: SearchResultComponent},
   {path:'', redirectTo:'/home', pathMatch: 'full'},
   {path:'**', component: PageNotFoundComponent}
 ];
