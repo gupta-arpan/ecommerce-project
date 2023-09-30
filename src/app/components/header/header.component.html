@@ -25,7 +25,7 @@
                 <a class="nav-link" routerLink="/user-auth">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cart(0)</a>
+                <a class="nav-link" href="#">Cart({{cartItems}})</a>
             </li>
         </ul>
         <ul *ngSwitchCase="'seller'" class="navbar-nav">
