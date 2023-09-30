@@ -1,0 +1,43 @@
+<div *ngIf="!isLoggedIn" class="w-25 m-auto">
+    <h1 class="text-center">
+        SignUp
+    </h1>
+    <form #userSignUp="ngForm" (ngSubmit)="signUp(userSignUp.value)" class="form-group mb-3">
+        <div class="mb-3">
+            <input class="form-control" ngModel type="text" name="name" placeholder="Enter name">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" ngModel type="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" ngModel type="password" name="password" placeholder="Enter password">
+        </div>
+        <div class="text-center">
+            <button type="submt" class="btn btn-primary">Sign up</button>
+        </div>
+    </form>
+    <div class="text-center">
+        <a (click)="openLogin()">Already have an account? <span class="already-account">Login</span></a>
+    </div>
+</div>
+
+<div *ngIf="isLoggedIn" class="w-25 m-auto">
+    <h1 class="text-center">
+        Login
+    </h1>
+    <p>{{authError}}</p>
+    <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)" class="form-group mb-3">
+        <div class="mb-3">
+            <input class="form-control" ngModel type="email" name="email" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+            <input class="form-control" ngModel type="password" name="password" placeholder="Enter password">            
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+    <div class="text-center">
+        <a (click)="openSignUp()">Don't have an account? Sign-Up</a>
+    </div>
+</div>

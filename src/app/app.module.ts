@@ -17,6 +17,7 @@ import { UpdateProductComponent } from './components/update-product/update-produ
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SearchResultComponent } from './components/search-result/search-result.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { UserAuthComponent } from './components/user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     SellerProductListComponent,
     UpdateProductComponent,
     SearchResultComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
