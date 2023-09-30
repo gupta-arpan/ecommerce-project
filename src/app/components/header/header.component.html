@@ -8,7 +8,9 @@
     </div>
     <div class="search-results-wrapper">
         <ul class="list-group">
-            <li class="list-group-item" *ngFor="let item of searchResult">{{item.name}}</li>
+            <li class="list-group-item" *ngFor="let item of searchResult">
+                <a (mousedown)="redirectToDetailsPage(item.id)">{{item.name}}</a>
+            </li>
         </ul>
     </div>
     <div class="  d-inline" [ngSwitch]="menuType">

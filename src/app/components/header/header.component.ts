@@ -59,4 +59,8 @@ export class HeaderComponent {
   submitSearch(query:string){
     this.route.navigate([`/search/${query}`])
   }
+
+  redirectToDetailsPage(id: number){
+    this.route.navigate([`/product/${id}`]);
+  }
 }
